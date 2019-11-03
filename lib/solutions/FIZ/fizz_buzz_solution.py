@@ -9,13 +9,16 @@ def fizz_buzz(number):
     if (number % 5 == 0) or ("5" in numstring):
         strings.append("buzz")
     # deluxe if greater than 10 and all the digits are identical
-    # WHAT HAPPENS IF SOMETHING IS EITHER FIZZ & DELUXE (BUT NOT BUZZ)
-    # OR BUZZ AND DELUXE (BUT NOT FIZZ)?
-    # I am assuming "fizz deluxe" or "buzz deluxe"
+    # fake deluxe if also odd
+    # again presumably e.g. fizz fake deluxe
     if (number > 10) and (numstring == len(numstring) * numstring[0]):
-        strings.append("deluxe")
+        if number % 2 == 0:
+            strings.append("deluxe")
+        else:
+            strings.append("fake deluxe")
     if len(strings) > 0:
         return(" ".join(strings))
     else:
         return(numstring)
+
 
