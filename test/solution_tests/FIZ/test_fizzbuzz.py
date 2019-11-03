@@ -20,4 +20,3 @@ class TestSum():
         assert fizz_buzz_solution.fizz_buzz(503) == "fizz buzz"
     def test_neither(self):
         assert fizz_buzz_solution.fizz_buzz(7) == "7"
-
