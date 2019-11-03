@@ -18,17 +18,19 @@ class TestSum():
         assert fizz_buzz_solution.fizz_buzz(35) == "fizz buzz"
     def test_fizz_buzz_contains_3_and_5(self):
         assert fizz_buzz_solution.fizz_buzz(503) == "fizz buzz"
+    def test_fake_deluxe(self):
+        assert fizz_buzz_solution.fizz_buzz(11) == "fake deluxe"
     def test_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(11) == "deluxe"
+        assert fizz_buzz_solution.fizz_buzz(22) == "deluxe"
     def text_deluxe_div_by_3(self):
         assert fizz_buzz_solution.fizz_buzz(66) == "fizz deluxe"
-    def text_deluxe_contains_3(self):
-        # think this is redundant as also div by 3 in all cases
-        assert fizz_buzz_solution.fizz_buzz(33) == "fizz deluxe"
-    def text_deluxe_div_by_5(self):
-        assert fizz_buzz_solution.fizz_buzz(55) == "fizz deluxe"
+    def text_fake_deluxe_div_by_3(self):
+        assert fizz_buzz_solution.fizz_buzz(33) == "fizz fake deluxe"
+    def text_fake_deluxe_div_by_5(self):
+        assert fizz_buzz_solution.fizz_buzz(55) == "buzz fake deluxe"
     def text_fizz_buzz_deluxe(self):
-        assert fizz_buzz_solution.fizz_buzz(555) == "fizz buzz deluxe"
+        assert fizz_buzz_solution.fizz_buzz(555) == "fizz buzz fake deluxe"
     def test_neither(self):
         assert fizz_buzz_solution.fizz_buzz(7) == "7"
+
 
