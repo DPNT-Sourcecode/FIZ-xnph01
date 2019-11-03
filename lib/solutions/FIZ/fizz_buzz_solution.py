@@ -8,10 +8,19 @@ def fizz_buzz(number):
     # buzz if divisible by 5 or it has a 5 in it:
     if (number % 5 == 0) or ("5" in numstring):
         strings.append("buzz")
-    # deluxe if greater than 10 and all the digits are identical
-    # fake deluxe if also odd
-    # again presumably e.g. fizz fake deluxe
-    if (number > 10) and (numstring == len(numstring) * numstring[0]):
+    """
+    Deluxe if div by 3 and contains a 3
+    or div by 5 and contains a 5
+    still fake deluxe if odd
+    """
+    if (
+        (
+            (number % 3 == 0) and ("3" in numstring)
+        ) or
+        (
+            (number % 5 == 0) and ("5" in numstring)
+        )
+    ):
         if number % 2 == 0:
             strings.append("deluxe")
         else:
@@ -20,3 +29,4 @@ def fizz_buzz(number):
         return(" ".join(strings))
     else:
         return(numstring)
+
