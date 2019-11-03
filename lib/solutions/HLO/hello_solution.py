@@ -7,7 +7,3 @@ def hello(friend_name):
         return(f"Hello, {friend_name}!")
     else:
         return("Please enter a string")
-
-
-
-
