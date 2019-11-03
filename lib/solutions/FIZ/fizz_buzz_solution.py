@@ -20,5 +20,3 @@ def fizz_buzz(number):
         return(" ".join(strings))
     else:
         return(numstring)
-
-

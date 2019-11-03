@@ -32,5 +32,3 @@ class TestSum():
         assert fizz_buzz_solution.fizz_buzz(555) == "fizz buzz fake deluxe"
     def test_neither(self):
         assert fizz_buzz_solution.fizz_buzz(7) == "7"
-
-
